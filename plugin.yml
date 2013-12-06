@@ -1,0 +1,30 @@
+name: SimpleReport
+version: 1.0
+description: A simple plugin for reports.
+author: YoFuzzy3
+main: com.fuzzoland.SimpleReport.SimpleReport
+
+commands:
+  report:
+    description: Use /report.
+        
+permissions:
+  simplereport.*:
+    description: All features of SimpleReport.
+    children:
+      simplereport.submit: true
+      simplereport.list: true
+      simplereport.view: true
+      simplereport.del: true
+  simplereport.submit:
+    description: Use /report submit
+    default: true
+  simplereport.list:
+    description: Use /report list
+    default: op
+  simplereport.view:
+    description: Use /report view
+    default: op
+  simplereport.del:
+    description: Use /report del
+    default: op
